@@ -1,0 +1,44 @@
+{
+    "_comment":"php artisan crud:generate Category --fields_from_file='appzcoder/Category.json' --view-path=admin --controller-namespace=App\\Http\\Controllers\\Admin --route-group=admin --form-helper=html",
+    "fields": [
+        {
+            "name": "CategoryId",
+            "type": "integer#unsigned"
+        },
+        {
+            "name": "Category",
+            "type": "varchar"
+        },
+        {
+            "name": "Desc",
+            "type": "varchar"
+        },
+        {
+            "name": "ParentId",
+            "type": "integer#unsigned"
+        },
+        {
+            "name": "CreatedAt",
+            "type": "timestamp"
+        },
+        {
+            "name": "UpdatedAt",
+            "type": "timestamp"
+        },
+        {
+            "name": "CreatedBy",
+            "type": "varchar"
+        },
+        {
+            "name": "UpdatedBy",
+            "type": "varchar"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "Category",
+            "type": "belongsTo",
+            "class": "App\\Models\\Category"
+        }
+    ]
+}
